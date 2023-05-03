@@ -32,11 +32,10 @@ with smtplib.SMTP(smtp_server, port) as server:
     try:
         for i in range(len(df)):
             message = MIMEMultipart("alternatives")
-            message['Subject'] = 'Link'
+            message['Subject'] = 'Feliz cumpleaños'
             message['from'] = sender_email
             receiver_email = df.iloc[i]['email']
 
-            #text = "Hey!"
             html = """/
                     <html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
         <meta charset="UTF-8">
