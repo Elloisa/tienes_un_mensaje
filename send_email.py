@@ -15,9 +15,6 @@ port = 587  # For starttls
 sender_email = "unnilorena@gmail.com"
 password = "mmme aahd lexu ruhw"
 
-#Read CSV file that contains reciever emails
-
-
 # Create a secure SSL context
 context = ssl.create_default_context()
 
@@ -27,7 +24,7 @@ with smtplib.SMTP(smtp_server, port) as server:
     server.starttls(context=context)
     server.login(sender_email, password)
 
-    df = pandas.read_csv('lista_correos.csv', delimiter = ';', index_col = "Nombre")
+    df = pandas.read_csv('C:\\Users\\CASA\\Portafolio\\digital_NAO\\tienes_un_mensaje\\lista_correos.csv', delimiter = ';', index_col = "Nombre")
 
     try:
         for i in range(len(df)):
