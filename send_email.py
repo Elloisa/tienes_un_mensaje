@@ -6,7 +6,6 @@ Created on Monday April 24 23:37:00 2023
 """
 
 #STARTING A SECURE SMTP CONNECTION==============================================================================
-
 import smtplib, ssl
 import pandas
 
